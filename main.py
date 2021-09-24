@@ -9,4 +9,7 @@ def generate(length):
 
 
 if __name__ == '__main__':
-    generate(int(input("Enter the Length of the required Password: ")))
+    try:
+        generate(int(input("Enter the Length of the required Password: ")))
+    except:
+        print("Entered invalid Length")
